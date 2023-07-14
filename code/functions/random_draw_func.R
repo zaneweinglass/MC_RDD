@@ -14,6 +14,6 @@ random_draw <- function(input_seed) {
     replace = F
   ) |>
   ungroup() |>
-  mutate(seed_id = rep(seed, num_reps * samp_size))
+  mutate(seed_id = rep(input_seed, num_reps * samp_size))
   
 }
